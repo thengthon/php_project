@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    padding-bottom: 5px;
+}
+.polygon {
+    background: rgba(255, 0, 0, 0.842);
+    width: 15%;
+    height: 5vh;
+    clip-path: polygon(
+        0% 0%,
+        90% 0%,
+        100% 100%,
+        0% 100%
+    );
+}
+.logo {
+    background: #000;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+.menu-container {
+    height: 10vh;
+    width: 100%;
+    border-bottom: 3px solid;
+    background: rgba(255, 0, 0, 0.842);
+}
+.navbar {
+    width: 85%;
+    height: 100%;
+}
+.navbar a {
+    font-size: 24px;
+    color: white;
+    padding: 0 10px;
+}
+
+
+/* home page */
+.flag img {
+    width: 120px;
+    height: 60px;
+    padding: 0 10px;
+}
+.line {
+    border-bottom: 2px solid;
+}
+.box-title {
+    width: 20%;
+    clip-path: polygon(
+        15% 0%,
+        85% 0%,
+        100% 100%,
+        0% 100%
+    );
+    border-top: 3px solid red;
+}
+.about-content .kh,
+.about-content .en {
+    width: 48%;
+}
+.about-content .kh-en {
+    width: 70%;
+}
+
+
+/* ministry page */
+.ministry {
+    width: 30%;
+    border: 2px solid red;
+    clip-path: polygon(
+        3% 0,
+        97% 0,
+        100% 3%,
+        100% 97%,
+        97% 100%,
+        3% 100%,
+        0 97%,
+        0 3%
+    );
+}
+.min-logo img {
+    width: 70%;
+    height: 170px;
+}
+.minister img {
+    width: 30%;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    color: white;
+    font-size: 18px;
+    border-top: 3px solid red;
+}
+#f-logo {
+    width: 75px;
+    height: 75px;
+}
+footer #f-logo,  footer p {
+    margin-bottom: 10px;
+}
+footer .f-right a {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
