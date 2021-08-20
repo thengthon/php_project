@@ -1,4 +1,4 @@
-<div class="homepage">
+<div class="homepage" id="home">
     <div class="motto container p-3 text-center">
         <h1 class="display-5 align-center">ព្រះរាជាណាចក្រកម្ពុជា</h1>
         <h1 class="display-5 align-center">ជាតិ សាសនា ព្រះមហាក្សត្រ</h1>
@@ -38,3 +38,8 @@
         </div>
     </div>
 </div>
+<?php
+    include_once('pages/user/news.php');
+    include_once('pages/user/ministry.php');
+    include_once('pages/user/donate.php');
+?>
