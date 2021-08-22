@@ -19,7 +19,11 @@
         if (!empty($title) && !empty($content)) {
             create_post($_POST, $image_path);
         }
-        header("location: http://localhost/php_project/?page=admin&s=1#news");
+        if($_POST['userID'] == 1) {
+            header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#news");
+        } else {
+            header("location: http://localhost/php_project/pages/user/thank_poster.php");
+        }
     }
 
 ?>

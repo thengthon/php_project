@@ -36,7 +36,7 @@
                     <span class="text-danger">Update image? (PNG, JPG, JPEG)</span>
                 </div>
                 <div class="text-right">
-                    <a href="http://localhost/php_project/?page=1&s=1#news" type="reset" class="btn btn-warning">Cancel</a>
+                    <a href="http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#news" type="reset" class="btn btn-warning">Cancel</a>
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </form>

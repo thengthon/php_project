@@ -30,8 +30,8 @@
                     In addition, those who have registered as members can participate in sharing information through the supervision of our employees. <br>
                     Experts will evaluate the quality of the information before allowing it to be shared with the public. <br> We thank you for your participation and support.<br><br>
                     <div class="s-l">
-                        <a href="" class="btn btn-warning">បង្កើតគណនី</a>
-                        <a href="" class="btn btn-primary">ចូល</a>
+                        <a href="?page=signup" class="btn btn-warning">បង្កើតគណនី</a>
+                        <a href="?page=login" class="btn btn-primary">ចូល</a>
                     </div>
                 </div>
             </div>

@@ -14,13 +14,13 @@
         } else {
             $image_path = '';
         }
-        $name = $_POST['name'];
+        $name = $_POST['ministryName'];
         $website = $_POST['website'];
         $mission = $_POST['mission'];
         if (!empty($name) && !empty($website) && !empty($mission)) {
             update_ministry($_POST, $image_path);
         }
-        header("location: http://localhost/php_project/?page=admin&s=1#ministry");
+        header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#ministry");
     }
 
 ?>

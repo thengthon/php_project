@@ -26,9 +26,6 @@ header {
         0% 100%
     );
 }
-.logo {
-    background: #000;
-}
 #logo {
     width: 100px;
     height: 100px;
@@ -110,7 +107,7 @@ header {
 
     /* login page */
 #l-logo {
-    width: 200;
+    width: 200px;
     height: 100px;
 }
     /* news */
@@ -174,6 +171,7 @@ header {
 
     /* news */
 .news-card {
+    width:47%;
     border: 2px solid red;
     clip-path: polygon(
         3% 0,
@@ -195,30 +193,7 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer style */
 footer{
     color: white;
     font-size: 18px;
@@ -236,3 +211,83 @@ footer .f-right a {
     font-size: 30px;
     padding: 10px;
 }
+
+
+/* medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .polygon {
+        height: 3vh;
+    }
+    #logo {
+        width: 90px;
+        height: 90px;
+        left: 30px;
+    }
+    .navbar a {
+        font-size: 18px;
+        padding: 0 3px;
+    }
+    .motto h1 {
+        font-size: 24px;
+    }
+    .inactivated {
+        width: 30%;
+    }
+    .all-news .mr-2 {
+        width: 100%;
+    }
+    .all-news img {
+        width: 100%;
+        height: 275px;
+    }
+    .minister-card {
+        width: 100%;
+    }
+    #news .news {
+        width: 45%;
+    }
+}
+
+
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 500px) and (max-width: 768px) {
+    .polygon {
+        height: 2vh;
+    }
+    #logo {
+        width: 70px;
+        height: 70px;
+        left: 10px;
+    }
+    .navbar a {
+        font-size: 15px;
+        padding: 0 3px;
+    }
+    .motto h1,
+    .motto h5 {
+        font-size: 20px;
+    }
+    .box-title {
+        width: 40%;
+    }
+    .ministry {
+        width: 100%;
+    }
+    .box-title-crud {
+        width: 40%;
+    }
+    .all-news .mr-2 {
+        width: 100%;
+    }
+    .all-news img {
+        width: 100%;
+        height: 275px;
+    }
+    .minister-card {
+        width: 100%;
+    }
+    .news-card {
+        width: 100%;
+    }
+}
+

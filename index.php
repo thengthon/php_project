@@ -2,7 +2,7 @@
 
     include_once('partial/header.php');
     
-    if (isset($_GET['page']) && isset($_GET['s'])) {
+    if (isset($_GET['page']) && isset($_GET['s']) && $_GET['page'] == 'jokxiuhiusr23r23bb' && $_GET['s'] == 'sffsf234231') {
         include_once('partial/navbar_admin.php');
         include_once('pages/admin/activation.php');
         include_once('pages/admin/news_crud.php');
@@ -20,7 +20,7 @@
                 require_once('pages/404.php');
             }
         } else {
-            if (isset($_GET['s'])) {
+            if (isset($_GET['s']) && $_GET['s'] == '0okejiunqwkeksdsirueskdasdf') {
                 include_once('partial/navbar_admin_switch.php');
             } else {
                 include_once('partial/navbar.php');

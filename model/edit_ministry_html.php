@@ -13,7 +13,7 @@
             <form action="edit_ministry_model.php" method="POST" enctype="multipart/form-data" class="p-3">
                 <input type="hidden" value="<?= $ministry['ministryID'] ?>" name="id">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name..." autocomplete="off" value="<?= $ministry['ministryName'] ?>">
+                    <input type="text" class="form-control" name="ministryName" placeholder="Name..." autocomplete="off" value="<?= $ministry['ministryName'] ?>">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="website" placeholder="Website..." autocomplete="off" value="<?= $ministry['website'] ?>">
@@ -40,7 +40,7 @@
                     <span class="text-danger">Update logo? (PNG, JPG, JPEG)</span>
                 </div>
                 <div class="text-right">
-                    <a href="http://localhost/php_project/?page=1&s=1#ministry" type="reset" class="btn btn-warning">Cancel</a>
+                    <a href="http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#ministry" type="reset" class="btn btn-warning">Cancel</a>
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </form>

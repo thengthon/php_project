@@ -24,8 +24,8 @@
                     <p><b>Mission: </b><?= $ministry['mission'] ?></p>
                 </div>
                 <div class="text-right">
-                    <a href="<?= $ministry['website'] ?>" class="btn btn-warning" target="_blank">គេហទំព័រ</a></a>
-                    <a href="" class="btn btn-danger gonews">ព្រឹត្តិការណ៍</a>
+                    <a href="<?= $ministry['website'] ?>" class="btn btn-warning mb-2" target="_blank">គេហទំព័រ</a></a>
+                    <a href="#news" class="btn btn-danger gonews mb-2">ព្រឹត្តិការណ៍</a>
                 </div>
         </div>
 
@@ -35,10 +35,14 @@
         <ul class="pagination m-auto">
             <li class="page-item"><a class="page-link disabled"><</a></li>
             <?php  
-                    $pages = get_numOf_pages_ministry();
-                    for($i = 1; $i <= $pages + 1; $i++):
+                $pages = get_numOf_pages_ministry();
+                for($i = 1; $i <= $pages + 1; $i++):
             ?>
-                <li class="page-item"><a class="page-link" href="?pm=<?= $i ?>#ministry"><?= $i ?></a></li>
+                <?php if((isset($_GET['pm']) && ($_GET['pm'] == $i)) || (!isset($_GET['pm']) && $i == 1)): ?>
+                    <li style="z-index: -1;" class="page-item active"><a class="page-link" href="?pm=<?= $i ?>#ministry"><?= $i ?></a></li>
+                <?php else: ?>
+                    <li class="page-item"><a class="page-link" href="?pm=<?= $i ?>#ministry"><?= $i ?></a></li>
+                <?php endif ?>
             <?php endfor ?>
             <li class="page-item"><a class="page-link disabled">></a></li>
         </ul>

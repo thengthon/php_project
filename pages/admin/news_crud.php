@@ -20,6 +20,8 @@
                     </div>
                     <div class="modal-body">
                         <form action="model/create_post_model.php" method="POST" enctype="multipart/form-data" class="p-3">
+                            <input type="hidden" value="1" name="activated">
+                            <input type="hidden" value="1" name="userID">
                             <div class="form-group">
                                 <textarea class="form-control" name="title" placeholder="Title..."></textarea>
                             </div>
@@ -54,12 +56,13 @@
             </div>
         </div>
     </div>
+    <?php include_once('pages/user/news_detail.php'); ?>
     <div class="all-news d-flex justify-content-center flex-wrap">
         <?php foreach($data as $news): ?>
-        <div class="news-card mb-3 p-3 ml-2 mr-2 d-flex flex-column justify-content-between"​ style="width:47%;">
+        <div class="news-card mb-3 p-3 ml-2 mr-2 d-flex flex-column justify-content-between"​>
             <div>
-                <div class="d-flex border-bottom border-dark pb-3">
-                    <div class="mr-2">
+                <div class="d-flex flex-wrap border-bottom border-dark pb-3">
+                    <div class="mr-2 mb-2">
                         <img src="<?= $news['photo'] ?>" alt="">
                     </div>
                     <div>
@@ -74,7 +77,7 @@
                 <p><b>ស្ថិតក្រោម</b> <?= $news['ministryName'] ?></p>
             </div>
             <div class="text-right">
-                <a href="" class="btn btn-info">Detail</i></a>
+                <a href="http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231&n_id=<?= $news['postID'] ?>#post" class="btn btn-info">Detail</i></a>
                 <a href="model/edit_post_html.php?id=<?= $news['postID'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
                 <a href="model/delete_model.php?table=post&id=<?= $news['postID'] ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
             </div>

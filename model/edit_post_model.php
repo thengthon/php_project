@@ -19,7 +19,7 @@
         if (!empty($title) && !empty($content)) {
             update_post($_POST, $image_path);
         }
-        header("location: http://localhost/php_project/?page=admin&s=1#news");
+        header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#news");
     }
 
 ?>

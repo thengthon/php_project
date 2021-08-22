@@ -18,7 +18,7 @@
         if (!empty($name)) {
             add_minister($_POST, $image_path);
         }
-        header("location: http://localhost/php_project/?page=admin&s=1#minister");
+        header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#minister");
     }
 
 ?>

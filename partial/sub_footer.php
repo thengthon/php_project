@@ -12,10 +12,10 @@
         </div>
         <p>-បណ្តាញសង្គម-</p>
         <div>
-            <a href="www.facebook.com" class="fa fa-facebook-square"></a>
-            <a href="www.facebook.com" class="fa fa-linkedin-square"></a>
-            <a href="www.facebook.com" class="fa fa-telegram"></a>
-            <a href="www.facebook.com" class="fa fa-instagram"></a>
+            <a class="fa fa-facebook-square"></a>
+            <a class="fa fa-linkedin-square"></a>
+            <a class="fa fa-telegram"></a>
+            <a class="fa fa-instagram"></a>
         </div>
     </div>
 </footer>

@@ -1,4 +1,4 @@
-<?php 
+<?php
     include_once('database/db.php');
     $data = get_users();
 ?>
@@ -19,16 +19,16 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="model/create_model.php" method="POST" class="p-3">
+                        <form action="authentication/signup_model.php" method="POST" class="p-3">
                             <input type="hidden" value="user" name="table">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Username..." name="username" autocomplete="off">
+                                <input type="text" class="form-control" placeholder="Username..." name="s-username" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Password..." name="password" autocomplete="off">
+                                <input type="text" class="form-control" placeholder="Password..." name="s-password" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email..." name="email" autocomplete="off">
+                                <input type="text" class="form-control" placeholder="Email..." name="s-email" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <select name="role" id="" class="form-control">
@@ -64,7 +64,7 @@
             <tr>
                 <th scope="row"><?= $user['userID'] ?></th>
                 <td><?= $user['username'] ?></td>
-                <td><?= $user['password'] ?></td>
+                <td ><?= substr($user['password'], 50) ?></td>
                 <td><?= $user['email'] ?></td>
                 <td><?= $user['role'] ?></td>
                 <td><?= $user['active'] ?></td>
@@ -73,9 +73,9 @@
                         <h5>Administrator</h5>
                         <?php  else: ?>
                             <?php  if ($user['active']): ?>
-                                <a href="" class="btn btn-warning">Disable</a>
+                                <a class="btn btn-warning mb-1">Disable</a>
                             <?php  else: ?>
-                                <a href="" class="btn btn-info">Enable</a>
+                                <a class="btn btn-info">Enable</a>
                             <?php  endif; ?>
                             <a href="model/delete_model.php?table=user&id=<?= $user['userID'] ?>" class="btn btn-danger">Remove</a>
                     <?php  endif; ?>
@@ -85,3 +85,12 @@
         </tbody>
     </table>
 </div>
+<?php
+    if(isset($_GET['e']) && ($_GET['e'] == 1)) {
+        echo "<script>alert('Try again, invalid data or format')</script>";
+    } else if (isset($_GET['e']) && ($_GET['e'] == 0)) {
+        echo "<script>alert('User is created!')</script>";
+    } else if (isset($_GET['e']) && ($_GET['e'] == 2)) {
+        echo "<script>alert('Try again, user is existed!')</script>";
+    }
+?>

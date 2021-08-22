@@ -59,7 +59,7 @@
     </div>
     <div class="all-ministries d-flex justify-content-center flex-wrap">
         <?php foreach($data as $ministry): ?>
-        <div class="ministry mb-3 p-3 ml-2 mr-2 d-flex flex-column justify-content-between">
+        <div class="ministry admin-ministry mb-3 p-3 ml-2 mr-2 d-flex flex-column justify-content-between">
                 <div>
                     <div class="min-logo text-center mb-3">
                         <img src="<?= $ministry['logo'] ?>" alt="">
@@ -76,11 +76,11 @@
                 <div class="d-flex justify-content-between">
                     <div>
                         <a href="<?= $ministry['website'] ?>" target="_blank">Official</a></a>
-                        <a href="" class="gonews pl-2">News</a>
+                        <a href="#post" class="gonews pl-2">News</a>
                     </div>
                     <div>
-                        <a href="model/edit_ministry_html.php?id=<?= $ministry['ministryID'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
-                        <a href="model/delete_model.php?table=ministry&id=<?= $ministry['ministryID'] ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                        <a href="model/edit_ministry_html.php?id=<?= $ministry['ministryID'] ?>" class="btn btn-warning mb-2"><i class="fa fa-edit"></i></a>
+                        <a href="model/delete_model.php?table=ministry&id=<?= $ministry['ministryID'] ?>" class="btn btn-danger mb-2"><i class="fa fa-trash"></i></a>
                     </div>
                 </div>
         </div>

@@ -6,7 +6,7 @@
             <img src="pictures/logo3.png" alt="LOGO" id="logo">
         </div>
         <div class="navbar d-flex justify-content-between">
-            <a href="http://localhost/php_project/?page=1&s=1" class="text-light" disabled>Admin</a>
+            <a href="http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231" class="text-light" disabled>Admin</a>
             <div class="d-flex">
                 <div class="dropdown">
                     <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -19,7 +19,8 @@
                         <a class="dropdown-item text-dark m-0" href="#user">User</a>
                     </div>
                 </div>
-                <a href="http://localhost/php_project/?s=0">Switch</a>
+                <a href="http://localhost/php_project/?s=0okejiunqwkeksdsirueskdasdf">Switch</a>
+                <a href="authentication/logout.php" class="btn btn-warning">Logout</a>
             </div>
         </div>
     </div>

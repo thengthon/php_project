@@ -21,7 +21,7 @@
         if (!empty($name) && !empty($website) && !empty($mission) && !empty($ministerID)) {
             add_ministry($_POST, $image_path);
         }
-        header("location: http://localhost/php_project/?page=admin&s=1#ministry");
+        header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#ministry");
     }
 
 ?>

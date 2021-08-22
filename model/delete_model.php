@@ -3,6 +3,6 @@
         $table = $_GET['table'];
         $id = $_GET['id'];
         include_once('../database/db.php');
-        delete($table, $id);
-        header("location: http://localhost/php_project/?page=admin&s=1#$table");
+        echo delete($table, $id);
+        header("location: http://localhost/php_project/?page=jokxiuhiusr23r23bb&s=sffsf234231#$table");
     }
